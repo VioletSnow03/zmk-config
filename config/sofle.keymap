@@ -111,6 +111,20 @@
 
             label = "ALIGN_HORIZONTAL";
         };
+
+        detach_instance: detach_instance {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp &kp>;
+
+            label = "DETACH_INSTANCE";
+        };
     };
 
     keymap {
@@ -149,11 +163,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1             &kp N7        &kp N8        &kp N9        &kp F5                             &kp F6     &kp F7        &kp F8    &kp F9     &kp F10   &kp F11
-&kp GRAVE  &kp N1             &kp N7        &kp N8        &kp NUMBER_6  &kp N5                             &kp N6     &kp N7        &kp N8    &kp N9     &kp N0    &kp F12
-&trans     &kp C_VOLUME_DOWN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp C_VOLUME_UP                    &kp CARET  &kp NUMBER_4  &kp N5    &kp LPAR   &kp RPAR  &kp PIPE
-&trans     &kp EQUAL          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RBRC         &trans    &trans  &kp LBKT   &kp RBKT      &kp SEMI  &kp COLON  &kp BSLH  &trans
-                              &trans        &trans        &trans        &trans           &trans    &trans  &trans     &trans        &trans    &trans
+&trans     &kp F1             &kp N7            &kp N8             &kp N9             &kp F5                             &kp F6     &kp F7        &kp F8    &kp F9     &kp F10   &kp F11
+&kp GRAVE  &kp N1             &align_bottom     &align_vertical    &align_top         &kp N5                             &kp N6     &kp N7        &kp N8    &kp N9     &kp N0    &kp F12
+&trans     &kp C_VOLUME_DOWN  &align_left       &align_horizontal  &align_right       &kp C_VOLUME_UP                    &kp CARET  &kp NUMBER_4  &kp N5    &kp LPAR   &kp RPAR  &kp PIPE
+&trans     &kp EQUAL          &kp LEFT_BRACKET  &kp NUMBER_2       &kp RIGHT_BRACKET  &kp RBRC         &trans    &trans  &kp LBKT   &kp RBKT      &kp SEMI  &kp COLON  &kp BSLH  &trans
+                              &trans            &trans             &trans             &trans           &trans    &trans  &trans     &trans        &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
