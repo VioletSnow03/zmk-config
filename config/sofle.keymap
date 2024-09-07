@@ -117,13 +117,55 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,
+                <&kp LEFT_ALT &kp LCTRL>,
                 <&macro_tap>,
-                <&kp H>,
+                <&kp B>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp &kp>;
+                <&kp LEFT_ALT &kp LCTRL>;
 
             label = "DETACH_INSTANCE";
+        };
+
+        toggle_UI: toggle_UI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp NON_US_BACKSLASH>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "TOGGLE_UI";
+        };
+
+        paste_to_replace: paste_to_replace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LCTRL>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LCTRL>;
+
+            label = "PASTE_TO_REPLACE";
+        };
+
+        ungroup: ungroup {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "UNGROUP";
         };
     };
 
@@ -163,11 +205,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1             &kp N7            &kp N8             &kp N9             &kp F5                             &kp F6     &kp F7        &kp F8    &kp F9     &kp F10   &kp F11
-&kp GRAVE  &kp N1             &align_bottom     &align_vertical    &align_top         &kp N5                             &kp N6     &kp N7        &kp N8    &kp N9     &kp N0    &kp F12
-&trans     &kp C_VOLUME_DOWN  &align_left       &align_horizontal  &align_right       &kp C_VOLUME_UP                    &kp CARET  &kp NUMBER_4  &kp N5    &kp LPAR   &kp RPAR  &kp PIPE
-&trans     &kp EQUAL          &kp LEFT_BRACKET  &kp NUMBER_2       &kp RIGHT_BRACKET  &kp RBRC         &trans    &trans  &kp LBKT   &kp RBKT      &kp SEMI  &kp COLON  &kp BSLH  &trans
-                              &trans            &trans             &trans             &trans           &trans    &trans  &trans     &trans        &trans    &trans
+&trans     &kp F1             &kp F2            &kp F3             &kp F4             &kp F5                               &kp F6         &kp F7                &kp F8                 &kp F9          &kp F10          &kp F11
+&kp GRAVE  &toggle_UI         &align_bottom     &align_vertical    &align_top         &paste_to_replace                    &kp AT_SIGN    &kp EXCLAMATION       &kp QUESTION           &kp PERCENT     &kp DOLLAR       &kp HASH
+&trans     &kp C_VOLUME_DOWN  &align_left       &align_horizontal  &align_right       &kp C_VOLUME_UP                      &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE
+&trans     &kp PAGE_DOWN      &kp LEFT_BRACKET  &kp I              &kp RIGHT_BRACKET  &ungroup           &trans    &trans  &kp EQUAL      &kp PLUS              &kp MINUS              &kp ASTERISK    &kp CARET        &trans
+                              &trans            &trans             &trans             &trans             &trans    &trans  &trans         &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
