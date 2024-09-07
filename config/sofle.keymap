@@ -28,11 +28,88 @@
     };
 
     macros {
-        AlignLeft: AlignLeft {
+        align_left: AlignLeft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
             label = "ALIGNLEFT";
+        };
+
+        align_right: align_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALIGN_RIGHT";
+        };
+
+        align_top: align_top {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALIGN_TOP";
+        };
+
+        align_bottom: align_bottom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALIGN_BOTTOM";
+        };
+
+        align_vertical: align_vertical {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALIGN_VERTICAL";
+        };
+
+        align_horizontal: align_horizontal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALIGN_HORIZONTAL";
         };
     };
 
