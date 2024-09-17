@@ -167,6 +167,20 @@
 
             label = "UNGROUP";
         };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT>;
+
+            label = "SCREENSHOT";
+        };
     };
 
     keymap {
@@ -206,7 +220,7 @@
 
             bindings = <
 &trans     &kp F1                 &kp F2            &kp F3          &kp F4             &kp F5                               &kp F6         &kp F7                &kp F8                 &kp F9          &kp F10          &kp F11
-&kp GRAVE  &toggle_UI             &align_bottom     &kp UP_ARROW    &detach_instance   &paste_to_replace                    &kp AT_SIGN    &kp EXCLAMATION       &kp QUESTION           &kp PERCENT     &kp DOLLAR       &kp HASH
+&kp GRAVE  &toggle_UI             &detach_instance  &kp UP_ARROW    &screenshot        &paste_to_replace                    &kp AT_SIGN    &kp EXCLAMATION       &kp QUESTION           &kp PERCENT     &kp DOLLAR       &kp HASH
 &trans     &kp C_VOLUME_DOWN      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &kp C_VOLUME_UP                      &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE
 &trans     &mt C_PREVIOUS C_NEXT  &kp LEFT_BRACKET  &kp I           &kp RIGHT_BRACKET  &ungroup           &trans    &trans  &kp EQUAL      &kp PLUS              &kp MINUS              &kp ASTERISK    &kp CARET        &trans
                                   &trans            &trans          &trans             &trans             &trans    &trans  &trans         &trans                &trans                 &trans
