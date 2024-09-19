@@ -219,10 +219,10 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1                 &kp F2            &kp F3          &kp F4             &kp F5                               &kp F6         &kp F7                &kp F8                 &kp F9          &kp F10          &kp F11
-&kp GRAVE  &toggle_UI             &detach_instance  &kp UP_ARROW    &screenshot        &paste_to_replace                    &kp AT_SIGN    &kp EXCLAMATION       &kp QUESTION           &kp PERCENT     &kp DOLLAR       &kp HASH
-&trans     &kp C_VOLUME_DOWN      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &kp C_VOLUME_UP                      &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE
-&trans     &mt C_PREVIOUS C_NEXT  &kp LEFT_BRACKET  &kp I           &kp RIGHT_BRACKET  &ungroup           &trans    &trans  &kp EQUAL      &kp PLUS              &kp MINUS              &kp ASTERISK    &kp CARET        &trans
+&trans     &kp F1                 &kp F2            &kp F3          &kp F4             &kp F5                               &kp F6         &kp F7                &kp F8                 &kp F9        &kp F10         &kp F11
+&kp GRAVE  &toggle_UI             &detach_instance  &kp UP_ARROW    &kp PRINTSCREEN    &paste_to_replace                    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT   &kp DOLLAR      &kp HASH
+&trans     &kp C_VOLUME_DOWN      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &kp C_VOLUME_UP                      &kp AMPERSAND  &kp QUESTION          &kp EXCLAMATION        &kp MINUS     &kp UNDERSCORE  &kp PIPE
+&trans     &mt C_PREVIOUS C_NEXT  &kp LEFT_BRACKET  &kp I           &kp RIGHT_BRACKET  &ungroup           &trans    &trans  &kp EQUAL      &kp PLUS              &kp MINUS              &kp ASTERISK  &kp CARET       &trans
                                   &trans            &trans          &trans             &trans             &trans    &trans  &trans         &trans                &trans                 &trans
             >;
 
@@ -240,11 +240,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans        &trans        &trans        &trans  &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans        &trans        &trans
+&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4                    &trans     &trans        &trans        &trans        &trans  &trans
+&trans      &kp INS           &kp PSCRN          &kp K_CMENU           &trans                 &trans                          &kp PG_UP  &kp N7        &kp N8        &kp N9        &kp N0  &trans
+&trans      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                        &kp PG_DN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &kp BSPC
+&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL     &trans    &trans  &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                              &trans             &trans                &trans                 &trans        &trans    &trans  &trans     &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
