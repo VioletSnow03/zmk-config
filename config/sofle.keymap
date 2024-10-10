@@ -297,11 +297,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans      &trans  &kp NUMBER_2  &kp NUMBER_4  &trans                          &trans  &trans  &trans  &trans  &trans  &to 0
-&trans  &kp TAB     &kp Q   &kp W         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp ESCAPE  &kp A   &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans  &trans        &trans        &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans  &trans        &trans        &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &kp NUMBER_4  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &to 0
+&trans      &trans  &trans  &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans        &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans  &trans        &trans  &kp SPACE  &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
