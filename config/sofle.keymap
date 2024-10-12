@@ -196,6 +196,20 @@
 
             label = "FIGMA_AI";
         };
+
+        copy_properties: copy_properties {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LCTRL>;
+
+            label = "COPY_PROPERTIES";
+        };
     };
 
     keymap {
@@ -234,11 +248,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1                 &kp F2            &kp F3          &kp F4          &kp F5                               &kp F6         &kp F7             &kp F8           &kp F9        &kp F10         &kp F11
-&kp GRAVE  &kp PRINTSCREEN        &detach_instance  &kp UP_ARROW    &kt LEFT_SHIFT  &paste_to_replace                    &kp AT_SIGN    &kp DOUBLE_QUOTES  &kp SQT          &kp DOLLAR    &kp GRAVE       &kp HASH
-&figma_AI  &kp LCTRL              &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT       &kp BACKSPACE                        &kp AMPERSAND  &kp QUESTION       &kp EXCLAMATION  &kp MINUS     &kp UNDERSCORE  &kp PIPE
-&kp I      &mt C_PREVIOUS C_NEXT  &kp HOME          &kp ESCAPE      &kp END         &ungroup           &trans    &trans  &kp EQUAL      &kp PLUS           &kp MINUS        &kp ASTERISK  &kp CARET       &trans
-                                  &trans            &trans          &trans          &trans             &trans    &trans  &trans         &trans             &trans           &trans
+&trans                 &kp F1            &kp F2            &kp F3          &kp F4          &kp F5                               &kp F6         &kp F7             &kp F8           &kp F9        &kp F10         &kp F11
+&kp GRAVE              &kp PRINTSCREEN   &detach_instance  &kp UP_ARROW    &kt LEFT_SHIFT  &paste_to_replace                    &kp AT_SIGN    &kp DOUBLE_QUOTES  &kp SQT          &kp DOLLAR    &kp GRAVE       &kp HASH
+&figma_AI              &kp LCTRL         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT       &kp BACKSPACE                        &kp AMPERSAND  &kp QUESTION       &kp EXCLAMATION  &kp MINUS     &kp UNDERSCORE  &kp PIPE
+&mt C_PREVIOUS C_NEXT  &copy_properties  &kp HOME          &kp ESCAPE      &kp END         &ungroup           &trans    &trans  &kp EQUAL      &kp PLUS           &kp MINUS        &kp ASTERISK  &kp CARET       &trans
+                                         &trans            &trans          &trans          &trans             &trans    &trans  &trans         &trans             &trans           &trans
             >;
 
             sensor-bindings =
