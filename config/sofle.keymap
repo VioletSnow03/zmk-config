@@ -261,7 +261,9 @@
                                &kp LGUI  &kp BACKSPACE  &kp LEFT_ALT  &lt 1 BACKSLASH  &mt LCTRL RET       &kp SPACE   &lt RAISE TAB  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
 
         lower_layer {
@@ -277,14 +279,14 @@
 
             bindings = <
 &trans          &kp F1            &kp F2            &kp F3          &kp F4          &kp F5                               &kp F6         &kp F7             &kp F8           &kp F9        &kp F10         &kp F11
-&kp GRAVE       &kp PRINTSCREEN   &detach_instance  &kp UP_ARROW    &kt LEFT_SHIFT  &paste_to_replace                    &kp AT_SIGN    &kp DOUBLE_QUOTES  &kp SQT          &kp DOLLAR    &kp GRAVE       &kp HASH
-&figma_AI       &kp LCTRL         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT       &kp BACKSPACE                        &kp AMPERSAND  &kp QUESTION       &kp EXCLAMATION  &kp MINUS     &kp UNDERSCORE  &kp PIPE
+&figma_AI       &kp PRINTSCREEN   &detach_instance  &kp UP_ARROW    &kt LEFT_SHIFT  &paste_to_replace                    &kp AT_SIGN    &kp DOUBLE_QUOTES  &kp SQT          &kp DOLLAR    &kp GRAVE       &kp HASH
+&kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT       &kp BACKSPACE                        &kp AMPERSAND  &kp QUESTION       &kp EXCLAMATION  &kp MINUS     &kp UNDERSCORE  &kp PIPE
 &kp LEFT_SHIFT  &copy_properties  &uncomment        &kp ESCAPE      &comment        &ungroup           &trans    &trans  &kp EQUAL      &kp PLUS           &kp MINUS        &kp ASTERISK  &kp CARET       &trans
                                   &trans            &trans          &trans          &trans             &trans    &trans  &trans         &trans             &trans           &trans
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
                 <&inc_dec_kp C_BRI_DEC C_BRI_INC>;
         };
 
