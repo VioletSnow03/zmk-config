@@ -270,7 +270,9 @@
         switch: switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp S &kp W &kp I &kp T &kp C &kp H>;
+            bindings =
+                <&macro_tap>,
+                <&kp S &kp W &kp I &kp T &kp C &kp H &kp ENTER>;
 
             label = "SWITCH";
         };
