@@ -383,7 +383,7 @@
 &kp TAB         &trans  &trans  &trans        &trans   &trans                             &trans         &trans  &trans  &trans  &trans  &trans
 &kp ESCAPE      &trans  &trans  &trans        &trans   &trans                             &trans         &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans        &trans   &trans     &trans       &trans     &trans         &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans        &switch  &kp LCTRL  &kp SPACE    &kp ENTER  &kp BACKSPACE  &trans  &trans  &trans
+                        &trans  &trans        &switch  &kp SPACE  &kp SPACE    &kp ENTER  &kp BACKSPACE  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
