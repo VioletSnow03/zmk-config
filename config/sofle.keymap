@@ -368,11 +368,11 @@
 
         left_numpad {
             bindings = <
-&trans  &trans  &trans        &trans        &trans          &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &kp N7        &kp N8        &kp N9          &kp DELETE                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp N0                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp PERCENT  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans        &trans        &kp LEFT_SHIFT  &kp PERIOD   &kp COMMA    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans          &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &kp N7        &kp N8        &kp N9          &kp BACKSPACE                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp N0                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp PERCENT    &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans        &trans        &kp LEFT_SHIFT  &kp PERIOD     &kp COMMA    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
