@@ -17,8 +17,6 @@
 
 &mt { flavor = "balanced"; };
 
-&lt { flavor = "hold-preferred"; };
-
 / {
     // Activate ADJUST layer by pressing raise and lower
 
