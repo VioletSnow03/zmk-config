@@ -392,11 +392,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans       &trans   &trans         &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans   &kp LEFT_ALT   &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(TAB)  &kp TAB  &kp BACKSPACE  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans   &trans         &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                     &trans   &trans         &trans  &kp EQUAL  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans          &trans         &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &kp LEFT_SHIFT  &kp LEFT_ALT   &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(TAB)  &kp TAB         &kp BACKSPACE  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans          &trans         &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                     &trans          &trans         &trans  &kp EQUAL  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
