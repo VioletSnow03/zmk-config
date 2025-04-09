@@ -395,7 +395,7 @@
             bindings = <
 &trans  &trans       &trans          &trans         &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &kp LEFT_SHIFT  &kp LEFT_ALT   &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(TAB)  &kp TAB         &kp BACKSPACE  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(TAB)  &kp TAB         &kp BACKSPACE  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &trans          &trans         &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
                      &trans          &trans         &trans  &kp EQUAL  &mkp LCLK    &trans  &trans  &trans  &trans  &trans
             >;
