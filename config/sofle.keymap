@@ -437,10 +437,10 @@
 
             display-name = "adjustt";
             bindings = <
-&trans  &trans        &trans           &trans           &trans        &trans                                  &none  &none  &none  &none  &none  &none
-&trans  &bt BT_CLR    &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &kp C_SLEEP   &kp C_POWER                             &none  &none  &none  &none  &none  &none
-&none   &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                            &none  &to 0  &to 9  &none  &none  &none
-&none   &none         &none            &kp NUMBER_1     &none         &none         &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
+&trans  &trans        &trans           &trans           &trans        &trans                                  &none  &none  &none  &none   &none  &none
+&trans  &bt BT_CLR    &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &kp C_SLEEP   &kp C_POWER                             &none  &none  &none  &none   &none  &none
+&none   &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                            &none  &to 0  &to 9  &to 10  &none  &none
+&none   &none         &none            &kp NUMBER_1     &none         &none         &rgb_ug RGB_TOG    &none  &none  &none  &none  &none   &none  &none
                       &none            &none            &none         &none         &none              &none  &none  &none  &none  &none
             >;
         };
